@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Nomina_SAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="CodigoEmpleado" />
+          </Key>
+          <Property Name="CodigoEmpleado" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="PrimerApellido" Type="varchar" MaxLength="50" />
+          <Property Name="SegundoApellido" Type="varchar" MaxLength="50" />
+          <Property Name="SalarioMensual" Type="money" />
+          <Property Name="TipoSalario" Type="int" />
+          <Property Name="CodigoPlanilla" Type="int" />
+          <Property Name="CodigoCargo" Type="int" />
+          <Property Name="CodigoNivel" Type="int" />
+          <Property Name="CodigoHorario" Type="int" />
+          <Property Name="CodigoArea" Type="int" />
+          <Property Name="CodigoDepartamento" Type="int" />
+          <Property Name="CodigoSucursal" Type="int" Nullable="false" />
+          <Property Name="FechaNacimiento" Type="smalldatetime" />
+          <Property Name="LugardeNacimiento" Type="varchar" MaxLength="50" />
+          <Property Name="Codigo_Clasif01" Type="varchar" MaxLength="10" />
+          <Property Name="Codigo_Clasif02" Type="varchar" MaxLength="10" />
+          <Property Name="Codigo_Clasif03" Type="varchar" MaxLength="10" />
+          <Property Name="Codigo_Clasif04" Type="varchar" MaxLength="10" />
+          <Property Name="Codigo_Clasif05" Type="varchar" MaxLength="10" />
+          <Property Name="Codigo_Clasif06" Type="varchar" MaxLength="10" />
+          <Property Name="NombreConyuge" Type="varchar" MaxLength="50" />
+          <Property Name="NoInss" Type="varchar" MaxLength="50" />
+          <Property Name="NoRUC" Type="varchar" MaxLength="50" />
+          <Property Name="TelHabitacion" Type="varchar" MaxLength="50" />
+          <Property Name="TelefonoCelular" Type="varchar" MaxLength="50" />
+          <Property Name="DirHabitacion" Type="varchar" MaxLength="255" />
+          <Property Name="TelOficina" Type="varchar" MaxLength="50" />
+          <Property Name="FaxOficina" Type="varchar" MaxLength="50" />
+          <Property Name="DirOficina" Type="varchar" MaxLength="255" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="Login" Type="varchar" MaxLength="50" />
+          <Property Name="NoHijos" Type="int" Nullable="false" />
+          <Property Name="RutaFoto" Type="varchar" MaxLength="255" />
+          <Property Name="Sexo" Type="int" />
+          <Property Name="FechaIngreso" Type="smalldatetime" />
+          <Property Name="CodigoMotivoA" Type="int" />
+          <Property Name="FechaBaja" Type="smalldatetime" />
+          <Property Name="TipoEstado" Type="int" />
+          <Property Name="FormaPago" Type="int" />
+          <Property Name="TipoMoneda" Type="int" />
+          <Property Name="CtaxCobrar" Type="varchar" MaxLength="20" />
+          <Property Name="ApartadoPostal" Type="varchar" MaxLength="50" />
+          <Property Name="EstadoCivil" Type="int" />
+          <Property Name="FechaAniversario" Type="smalldatetime" />
+          <Property Name="Cedula" Type="varchar" MaxLength="20" />
+          <Property Name="IngGravableInss" Type="money" Nullable="false" />
+          <Property Name="IngGravableIR" Type="money" Nullable="false" />
+          <Property Name="isSubsidio" Type="bit" Nullable="false" />
+          <Property Name="NAntiguedad" Type="int" Nullable="false" />
+          <Property Name="PorcAntiguedad" Type="real" Nullable="false" />
+          <Property Name="TipoEmpleo" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="CodigoNacionalidad" Type="int" Nullable="false" />
+          <Property Name="Acumulado" Type="money" Nullable="false" />
+          <Property Name="AcumuladoIr" Type="money" Nullable="false" />
+          <Property Name="IngGravableSubsidio" Type="money" Nullable="false" />
+          <Property Name="NombreExportacion" Type="varchar" MaxLength="50" />
+          <Property Name="SalarioINSS" Type="money" Nullable="false" />
+          <Property Name="isPeriodoPrueba" Type="bit" Nullable="false" />
+          <Property Name="FechaPeriodoPrueba" Type="datetime" />
+          <Property Name="CodigoTurno" Type="int" Nullable="false" />
+          <Property Name="isEmpleadoIndirecto" Type="bit" Nullable="false" />
+          <Property Name="IngGravablesInss_Local" Type="money" Nullable="false" />
+          <Property Name="IngGravablesInss_Dolar" Type="money" Nullable="false" />
+          <Property Name="IngGravablesIR_Local" Type="money" Nullable="false" />
+          <Property Name="IngGravablesIR_Dolar" Type="money" Nullable="false" />
+          <Property Name="IngGravablesSubsidio_Local" Type="money" Nullable="false" />
+          <Property Name="IngGravablesSubsidio_Dolar" Type="money" Nullable="false" />
+          <Property Name="IngAdicionales_Local" Type="money" Nullable="false" />
+          <Property Name="IngAdicionales_Dolar" Type="money" Nullable="false" />
+          <Property Name="InssPeriodo_Local" Type="money" Nullable="false" />
+          <Property Name="InssPeriodo_Dolar" Type="money" Nullable="false" />
+          <Property Name="InssPeriodoAdicional_Local" Type="money" Nullable="false" />
+          <Property Name="InssPeriodoAdicional_Dolar" Type="money" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_Local" Type="money" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_Dolar" Type="money" Nullable="false" />
+          <Property Name="InatecPeriodo_Local" Type="money" Nullable="false" />
+          <Property Name="InatecPeriodo_Dolar" Type="money" Nullable="false" />
+          <Property Name="AnioFiscal_SaldoInicial" Type="int" Nullable="false" />
+          <Property Name="AcumuladoDev_SaldoInicial" Type="money" Nullable="false" />
+          <Property Name="AcumuladoIR_SaldoInicial" Type="money" Nullable="false" />
+          <Property Name="PeriodosProyectar_SaldoInicial" Type="int" Nullable="false" />
+          <Property Name="PeriodosNoLaborados_SaldoInicial" Type="int" Nullable="false" />
+          <Property Name="SalarioInssPorSubsidio" Type="money" Nullable="false" />
+          <Property Name="Pais_Nacimiento" Type="varchar" MaxLength="50" />
+          <Property Name="Departamento_Nacimiento" Type="varchar" MaxLength="50" />
+          <Property Name="Municipio_Nacimiento" Type="varchar" MaxLength="50" />
+          <Property Name="Departamento_Actual" Type="varchar" MaxLength="50" />
+          <Property Name="Municipio_Actual" Type="varchar" MaxLength="50" />
+          <Property Name="IR_Fijo" Type="money" Nullable="false" />
+          <Property Name="IngGravablesInss_LocalExtra" Type="money" Nullable="false" />
+          <Property Name="IngGravablesInss_DolarExtra" Type="money" Nullable="false" />
+          <Property Name="InssPeriodo_LocalExtra" Type="money" Nullable="false" />
+          <Property Name="InssPeriodo_DolarExtra" Type="money" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_LocalExtra" Type="money" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_DolarExtra" Type="money" Nullable="false" />
+          <Property Name="InatecPeriodo_LocalExtra" Type="money" Nullable="false" />
+          <Property Name="InatecPeriodo_DolarExtra" Type="money" Nullable="false" />
+          <Property Name="IngGravablesIR_LocalExtra" Type="money" Nullable="false" />
+          <Property Name="IngGravablesIR_DolarExtra" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Nomina_SAModelStoreContainer">
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Nomina_SAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="CodigoEmpleado" />
+          </Key>
+          <Property Name="CodigoEmpleado" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PrimerApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SegundoApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SalarioMensual" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TipoSalario" Type="Int32" />
+          <Property Name="CodigoPlanilla" Type="Int32" />
+          <Property Name="CodigoCargo" Type="Int32" />
+          <Property Name="CodigoNivel" Type="Int32" />
+          <Property Name="CodigoHorario" Type="Int32" />
+          <Property Name="CodigoArea" Type="Int32" />
+          <Property Name="CodigoDepartamento" Type="Int32" />
+          <Property Name="CodigoSucursal" Type="Int32" Nullable="false" />
+          <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="LugardeNacimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif01" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif02" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif03" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif04" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif05" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Codigo_Clasif06" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NombreConyuge" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NoInss" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NoRUC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TelHabitacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TelefonoCelular" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DirHabitacion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TelOficina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FaxOficina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DirOficina" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NoHijos" Type="Int32" Nullable="false" />
+          <Property Name="RutaFoto" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Sexo" Type="Int32" />
+          <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+          <Property Name="CodigoMotivoA" Type="Int32" />
+          <Property Name="FechaBaja" Type="DateTime" Precision="0" />
+          <Property Name="TipoEstado" Type="Int32" />
+          <Property Name="FormaPago" Type="Int32" />
+          <Property Name="TipoMoneda" Type="Int32" />
+          <Property Name="CtaxCobrar" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ApartadoPostal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EstadoCivil" Type="Int32" />
+          <Property Name="FechaAniversario" Type="DateTime" Precision="0" />
+          <Property Name="Cedula" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IngGravableInss" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravableIR" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="isSubsidio" Type="Boolean" Nullable="false" />
+          <Property Name="NAntiguedad" Type="Int32" Nullable="false" />
+          <Property Name="PorcAntiguedad" Type="Single" Nullable="false" />
+          <Property Name="TipoEmpleo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CodigoNacionalidad" Type="Int32" Nullable="false" />
+          <Property Name="Acumulado" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="AcumuladoIr" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravableSubsidio" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="NombreExportacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SalarioINSS" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="isPeriodoPrueba" Type="Boolean" Nullable="false" />
+          <Property Name="FechaPeriodoPrueba" Type="DateTime" Precision="3" />
+          <Property Name="CodigoTurno" Type="Int32" Nullable="false" />
+          <Property Name="isEmpleadoIndirecto" Type="Boolean" Nullable="false" />
+          <Property Name="IngGravablesInss_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesInss_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesIR_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesIR_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesSubsidio_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesSubsidio_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngAdicionales_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngAdicionales_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodo_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodo_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodoAdicional_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodoAdicional_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InatecPeriodo_Local" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InatecPeriodo_Dolar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="AnioFiscal_SaldoInicial" Type="Int32" Nullable="false" />
+          <Property Name="AcumuladoDev_SaldoInicial" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="AcumuladoIR_SaldoInicial" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="PeriodosProyectar_SaldoInicial" Type="Int32" Nullable="false" />
+          <Property Name="PeriodosNoLaborados_SaldoInicial" Type="Int32" Nullable="false" />
+          <Property Name="SalarioInssPorSubsidio" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Pais_Nacimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Departamento_Nacimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Municipio_Nacimiento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Departamento_Actual" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Municipio_Actual" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IR_Fijo" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesInss_LocalExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesInss_DolarExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodo_LocalExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPeriodo_DolarExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_LocalExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InssPatronalPeriodo_DolarExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InatecPeriodo_LocalExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="InatecPeriodo_DolarExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesIR_LocalExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="IngGravablesIR_DolarExtra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Nomina_SAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Nomina_SAModelStoreContainer" CdmEntityContainer="Nomina_SAEntities">
+          <EntitySetMapping Name="Empleados">
+            <EntityTypeMapping TypeName="Nomina_SAModel.Empleados">
+              <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="CodigoEmpleado" ColumnName="CodigoEmpleado" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="PrimerApellido" ColumnName="PrimerApellido" />
+                <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+                <ScalarProperty Name="SalarioMensual" ColumnName="SalarioMensual" />
+                <ScalarProperty Name="TipoSalario" ColumnName="TipoSalario" />
+                <ScalarProperty Name="CodigoPlanilla" ColumnName="CodigoPlanilla" />
+                <ScalarProperty Name="CodigoCargo" ColumnName="CodigoCargo" />
+                <ScalarProperty Name="CodigoNivel" ColumnName="CodigoNivel" />
+                <ScalarProperty Name="CodigoHorario" ColumnName="CodigoHorario" />
+                <ScalarProperty Name="CodigoArea" ColumnName="CodigoArea" />
+                <ScalarProperty Name="CodigoDepartamento" ColumnName="CodigoDepartamento" />
+                <ScalarProperty Name="CodigoSucursal" ColumnName="CodigoSucursal" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="LugardeNacimiento" ColumnName="LugardeNacimiento" />
+                <ScalarProperty Name="Codigo_Clasif01" ColumnName="Codigo_Clasif01" />
+                <ScalarProperty Name="Codigo_Clasif02" ColumnName="Codigo_Clasif02" />
+                <ScalarProperty Name="Codigo_Clasif03" ColumnName="Codigo_Clasif03" />
+                <ScalarProperty Name="Codigo_Clasif04" ColumnName="Codigo_Clasif04" />
+                <ScalarProperty Name="Codigo_Clasif05" ColumnName="Codigo_Clasif05" />
+                <ScalarProperty Name="Codigo_Clasif06" ColumnName="Codigo_Clasif06" />
+                <ScalarProperty Name="NombreConyuge" ColumnName="NombreConyuge" />
+                <ScalarProperty Name="NoInss" ColumnName="NoInss" />
+                <ScalarProperty Name="NoRUC" ColumnName="NoRUC" />
+                <ScalarProperty Name="TelHabitacion" ColumnName="TelHabitacion" />
+                <ScalarProperty Name="TelefonoCelular" ColumnName="TelefonoCelular" />
+                <ScalarProperty Name="DirHabitacion" ColumnName="DirHabitacion" />
+                <ScalarProperty Name="TelOficina" ColumnName="TelOficina" />
+                <ScalarProperty Name="FaxOficina" ColumnName="FaxOficina" />
+                <ScalarProperty Name="DirOficina" ColumnName="DirOficina" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="NoHijos" ColumnName="NoHijos" />
+                <ScalarProperty Name="RutaFoto" ColumnName="RutaFoto" />
+                <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="CodigoMotivoA" ColumnName="CodigoMotivoA" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="TipoEstado" ColumnName="TipoEstado" />
+                <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+                <ScalarProperty Name="TipoMoneda" ColumnName="TipoMoneda" />
+                <ScalarProperty Name="CtaxCobrar" ColumnName="CtaxCobrar" />
+                <ScalarProperty Name="ApartadoPostal" ColumnName="ApartadoPostal" />
+                <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+                <ScalarProperty Name="FechaAniversario" ColumnName="FechaAniversario" />
+                <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+                <ScalarProperty Name="IngGravableInss" ColumnName="IngGravableInss" />
+                <ScalarProperty Name="IngGravableIR" ColumnName="IngGravableIR" />
+                <ScalarProperty Name="isSubsidio" ColumnName="isSubsidio" />
+                <ScalarProperty Name="NAntiguedad" ColumnName="NAntiguedad" />
+                <ScalarProperty Name="PorcAntiguedad" ColumnName="PorcAntiguedad" />
+                <ScalarProperty Name="TipoEmpleo" ColumnName="TipoEmpleo" />
+                <ScalarProperty Name="CodigoNacionalidad" ColumnName="CodigoNacionalidad" />
+                <ScalarProperty Name="Acumulado" ColumnName="Acumulado" />
+                <ScalarProperty Name="AcumuladoIr" ColumnName="AcumuladoIr" />
+                <ScalarProperty Name="IngGravableSubsidio" ColumnName="IngGravableSubsidio" />
+                <ScalarProperty Name="NombreExportacion" ColumnName="NombreExportacion" />
+                <ScalarProperty Name="SalarioINSS" ColumnName="SalarioINSS" />
+                <ScalarProperty Name="isPeriodoPrueba" ColumnName="isPeriodoPrueba" />
+                <ScalarProperty Name="FechaPeriodoPrueba" ColumnName="FechaPeriodoPrueba" />
+                <ScalarProperty Name="CodigoTurno" ColumnName="CodigoTurno" />
+                <ScalarProperty Name="isEmpleadoIndirecto" ColumnName="isEmpleadoIndirecto" />
+                <ScalarProperty Name="IngGravablesInss_Local" ColumnName="IngGravablesInss_Local" />
+                <ScalarProperty Name="IngGravablesInss_Dolar" ColumnName="IngGravablesInss_Dolar" />
+                <ScalarProperty Name="IngGravablesIR_Local" ColumnName="IngGravablesIR_Local" />
+                <ScalarProperty Name="IngGravablesIR_Dolar" ColumnName="IngGravablesIR_Dolar" />
+                <ScalarProperty Name="IngGravablesSubsidio_Local" ColumnName="IngGravablesSubsidio_Local" />
+                <ScalarProperty Name="IngGravablesSubsidio_Dolar" ColumnName="IngGravablesSubsidio_Dolar" />
+                <ScalarProperty Name="IngAdicionales_Local" ColumnName="IngAdicionales_Local" />
+                <ScalarProperty Name="IngAdicionales_Dolar" ColumnName="IngAdicionales_Dolar" />
+                <ScalarProperty Name="InssPeriodo_Local" ColumnName="InssPeriodo_Local" />
+                <ScalarProperty Name="InssPeriodo_Dolar" ColumnName="InssPeriodo_Dolar" />
+                <ScalarProperty Name="InssPeriodoAdicional_Local" ColumnName="InssPeriodoAdicional_Local" />
+                <ScalarProperty Name="InssPeriodoAdicional_Dolar" ColumnName="InssPeriodoAdicional_Dolar" />
+                <ScalarProperty Name="InssPatronalPeriodo_Local" ColumnName="InssPatronalPeriodo_Local" />
+                <ScalarProperty Name="InssPatronalPeriodo_Dolar" ColumnName="InssPatronalPeriodo_Dolar" />
+                <ScalarProperty Name="InatecPeriodo_Local" ColumnName="InatecPeriodo_Local" />
+                <ScalarProperty Name="InatecPeriodo_Dolar" ColumnName="InatecPeriodo_Dolar" />
+                <ScalarProperty Name="AnioFiscal_SaldoInicial" ColumnName="AnioFiscal_SaldoInicial" />
+                <ScalarProperty Name="AcumuladoDev_SaldoInicial" ColumnName="AcumuladoDev_SaldoInicial" />
+                <ScalarProperty Name="AcumuladoIR_SaldoInicial" ColumnName="AcumuladoIR_SaldoInicial" />
+                <ScalarProperty Name="PeriodosProyectar_SaldoInicial" ColumnName="PeriodosProyectar_SaldoInicial" />
+                <ScalarProperty Name="PeriodosNoLaborados_SaldoInicial" ColumnName="PeriodosNoLaborados_SaldoInicial" />
+                <ScalarProperty Name="SalarioInssPorSubsidio" ColumnName="SalarioInssPorSubsidio" />
+                <ScalarProperty Name="Pais_Nacimiento" ColumnName="Pais_Nacimiento" />
+                <ScalarProperty Name="Departamento_Nacimiento" ColumnName="Departamento_Nacimiento" />
+                <ScalarProperty Name="Municipio_Nacimiento" ColumnName="Municipio_Nacimiento" />
+                <ScalarProperty Name="Departamento_Actual" ColumnName="Departamento_Actual" />
+                <ScalarProperty Name="Municipio_Actual" ColumnName="Municipio_Actual" />
+                <ScalarProperty Name="IR_Fijo" ColumnName="IR_Fijo" />
+                <ScalarProperty Name="IngGravablesInss_LocalExtra" ColumnName="IngGravablesInss_LocalExtra" />
+                <ScalarProperty Name="IngGravablesInss_DolarExtra" ColumnName="IngGravablesInss_DolarExtra" />
+                <ScalarProperty Name="InssPeriodo_LocalExtra" ColumnName="InssPeriodo_LocalExtra" />
+                <ScalarProperty Name="InssPeriodo_DolarExtra" ColumnName="InssPeriodo_DolarExtra" />
+                <ScalarProperty Name="InssPatronalPeriodo_LocalExtra" ColumnName="InssPatronalPeriodo_LocalExtra" />
+                <ScalarProperty Name="InssPatronalPeriodo_DolarExtra" ColumnName="InssPatronalPeriodo_DolarExtra" />
+                <ScalarProperty Name="InatecPeriodo_LocalExtra" ColumnName="InatecPeriodo_LocalExtra" />
+                <ScalarProperty Name="InatecPeriodo_DolarExtra" ColumnName="InatecPeriodo_DolarExtra" />
+                <ScalarProperty Name="IngGravablesIR_LocalExtra" ColumnName="IngGravablesIR_LocalExtra" />
+                <ScalarProperty Name="IngGravablesIR_DolarExtra" ColumnName="IngGravablesIR_DolarExtra" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
