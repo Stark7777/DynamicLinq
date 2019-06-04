@@ -69,6 +69,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDNomina.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Cargos.cs" />
     <Compile Include="Empleados.cs">
       <DependentUpon>BDNomina.tt</DependentUpon>
     </Compile>
